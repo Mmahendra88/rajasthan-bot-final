@@ -3,7 +3,7 @@ from config import GEMINI_API_KEY
 
 class GeminiHandler:
     def __init__(self):
-        genai.configure(api_key=AIzaSyCW7UxMh4vEvvWcrfbZwW0WbxdZxHuBhB0)
+        genai.configure(api_key=GEMINI_API_KEY)
         self.model = genai.GenerativeModel('gemini-pro')
     
     def generate_response(self, user_question, scraped_data):
