@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Keys
-TELEGRAM_BOT_TOKEN = os.getenv('8316781825:AAGhjwbGi4m-K1blHe9_t8N4XdqwYPUvvXE')
-GEMINI_API_KEY = os.getenv('AIzaSyCW7UxMh4vEvvWcrfbZwW0WbxdZxHuBhB0')
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 
 # Websites to scrape
 WEBSITES = [
