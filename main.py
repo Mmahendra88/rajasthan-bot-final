@@ -420,7 +420,4 @@ def handle_connect():
 
 if __name__ == '__main__':
     print("🚀 Starting Rajasthan Tour Bot with Admin View...")
-    print("🔍 Admin Chat Monitoring: ENABLED")
-    print("📱 Real-time chat viewing available at /admin")
-    print("🏰 Knowledge Sources: jaipurthrumylens.com, rtdc.tourism.rajasthan.gov.in, rajasthantourdriver.com")
-    socketio.run(app, host='0.0.0.0', port=5000, debug=False)
+    socketio.run(app, host='0.0.0.0', port=5000, debug=False, allow_unsafe_werkzeug=True)
